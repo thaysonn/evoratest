@@ -1,0 +1,67 @@
+@Padaria.Webapi_HostAddress = http://localhost:5128
+
+
+GET {{Padaria.Webapi_HostAddress}}/api/produto/2
+Accept: application/json
+
+###
+
+POST {{Padaria.Webapi_HostAddress}}/api/produto
+Content-Type: application/json
+{
+  "name": "teste 5",
+  "description": "teste 5",
+  "price": 100.00,
+  "stock": 100
+}
+
+###
+
+PUT {{Padaria.Webapi_HostAddress}}/api/produto
+Content-Type: application/json
+{
+  "id": 5,
+  "name": "teste abc",
+  "description": "teste abc",
+  "price": 340.00,
+  "stock": 130
+}
+
+###
+
+DELETE {{Padaria.Webapi_HostAddress}}/api/produto/5
+Content-Type: application/json
+
+
+### PEDIDOS
+
+
+GET {{Padaria.Webapi_HostAddress}}/api/pedido/2
+Accept: application/json
+
+
+###
+
+
+POST {{Padaria.Webapi_HostAddress}}/api/pedido
+Content-Type: application/json
+{
+  "idProduto": "1",
+  "quantidade": "3"
+}
+ 
+
+
+###
+
+PUT {{Padaria.Webapi_HostAddress}}/api/pedido
+Content-Type: application/json
+{
+  "idPedido": 1,
+  "idProduto": 2
+}
+
+
+###
+
+DELETE {{Padaria.Webapi_HostAddress}}/api/pedido/1

@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Padaria.Application/Padaria.Application.csproj" />
+  <Project Path="Padaria.Domain/Padaria.Domain.csproj" />
+  <Project Path="Padaria.Infrastructure/Padaria.Infrastructure.csproj" />
+  <Project Path="Padaria.Webapi/Padaria.Webapi.csproj" />
+</Solution>
